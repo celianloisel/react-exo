@@ -7,6 +7,10 @@ body {
     background-color: #282c34;
 }
 
+a {
+    text-decoration: none;
+}
+
 .App {
     padding: 24px;
 }
@@ -84,4 +88,52 @@ body {
 .App-tasks-finish {
     color: grey;
     text-decoration-line: line-through;
+}
+
+.App-counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App-counter-part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(10px + 1vmin);
+    color: white;
+    margin: 0 50%;
+}
+
+.App-counter-part button {
+    padding: 8px;
+    font-size: calc(10px + 1vmin);
+    border-radius: 4px;
+    background-color: #61dafb;
+}
+
+.App-counter-part p {
+    margin: 16px;
+}
+
+.App-counter-text {
+    font-size: calc(10px + 1vmin);
+    color: white;
+    margin: 16px;
+}
+
+.a {
+    text-decoration: none;
+}
+
+.App-user {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #61dafb;
+    width: min-content;
+    border-radius: 15px;
 }

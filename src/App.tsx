@@ -1,28 +1,17 @@
 import React from 'react';
 import './App.css';
-import {FaCalendar} from 'react-icons/fa';
-import InputForm from "./components/input-form";
-import Divider from "./components/divider";
-import Counter from "./components/counter";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import HomePage from "./components/home";
+import UserPage from "./components/user-page";
 
 function App() {
     return (
-        <div className="App">
-            <header className="App-header">
-                <h1>Todo</h1>
-                <div className="App-header-date">
-                    <div className="App-header-date-text">
-                        <h2>Today</h2>
-                        <p>17 Feb 2022</p>
-                    </div>
-                    <FaCalendar/>
-                </div>
-            </header>
-            <Divider/>
-            <InputForm/>
-            <Divider/>
-            <Counter/>
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<HomePage/>}></Route>
+                <Route path="/user" element={<UserPage/>}></Route>
+            </Routes>
+        </BrowserRouter>
     );
 }
 
