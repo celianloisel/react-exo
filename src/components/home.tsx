@@ -2,6 +2,7 @@ import React from "react";
 import {FaCalendar} from "react-icons/fa";
 import Divider from "./divider";
 import InputForm from "./input-form";
+import ProductList from "./product-list";
 
 export default function HomePage() {
     return (
@@ -18,6 +19,8 @@ export default function HomePage() {
             </header>
             <Divider/>
             <InputForm/>
+            <Divider/>
+            <ProductList/>
         </div>
     )
 }
