@@ -2,8 +2,6 @@ import React from "react";
 import {FaCalendar} from "react-icons/fa";
 import Divider from "./divider";
 import InputForm from "./input-form";
-import Counter from "./counter";
-import User from "./user";
 
 export default function HomePage() {
     return (
@@ -20,11 +18,6 @@ export default function HomePage() {
             </header>
             <Divider/>
             <InputForm/>
-            <Divider/>
-            <Counter/>
-            <Divider/>
-            <User/>
-            <Divider/>
         </div>
     )
 }

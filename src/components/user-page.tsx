@@ -1,13 +1,8 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 export default function UserPage() {
-    const location = useLocation();
-    const searchParams = new URLSearchParams(location.search);
-
-    // Retrieve name and email from query parameters
-    const name = searchParams.get("name");
-    const email = searchParams.get("email");
+    const { name, email } = useParams();
 
     return (
         <div className="App-user">

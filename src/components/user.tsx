@@ -13,8 +13,7 @@ export default function User() {
             {userList.map((user, index) => (
                 <Link
                     to={{
-                        pathname: "/user",
-                        search: `?name=${user.name}&email=${user.email}`,
+                        pathname: `/user/${user.name}/${user.email}`,
                     }}
                     className="App-user-button"
                     key={index}
